@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ways of displaying</title>
+	
+</head>
+<body>
+   <p id="first">open console</p>
+   <script type="text/javascript">
+		/*var obj={name:"javascript",age:23,address:"Vijayawada",dob:1998,mark:"js"};
+		var i, text="";
+		for(i in obj){
+			text=text+obj[i]+" "
+		}
+		console.log(obj);
+		document.getElementById("first").innerHTML=text;*/
+   	var obj={name:"javascript",age:23,address:"Vijayawada",dob:1998,mark:"js"};
+   	var newVariable=Object.values(obj);
+   	console.log(newVariable);
+   	document.getElementById("first").innerHTML=newVariable;
+	</script>
+</body>
+</html>
